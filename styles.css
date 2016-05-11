@@ -29,6 +29,12 @@
 
 }
 
+.pos-rel{
+    position: relative;
+
+}
+
+
 .pos-rel-left
 {
     position: relative;
@@ -44,6 +50,12 @@
     float: right;
     right: 20px;
     top: 20px;
+}
+.pos-rel-text
+{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
 }
 
 .font-style-1
@@ -88,7 +100,11 @@
     font-family: lato;
     line-height: 30px;
     font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
+
 
 
 .font-style-5
@@ -96,7 +112,9 @@
     font-size: 24px;
     font-family: lato;
     text-align: left;
-    font-weight: 400
+    font-weight: 400;
+    padding-left: 10px;
+
 }
 
 .font-style-6
@@ -119,9 +137,44 @@
     padding-right: 30px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    }
+}
 
+.font-style-8
+{
+    font-size: 23px;
+    font-family: lato;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: white;
+}
 
+.font-style-9
+{
+    font-size: 15px;
+    font-family: lato;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+
+}
+
+.center-text
+{
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+
+}
+.width-fld
+{
+    width: 95%;
+}
+
+.width-fld1
+{
+    width: 95%;
+}
 .pad-top-1
 {
      margin-top: 150px;
@@ -134,7 +187,7 @@
 
 .pad-top-3
 {
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 .pad-top-4
@@ -188,9 +241,6 @@
 }
 
 
-
-
-
 .btn-property-accept:hover
 {
     background-color:  #2cb99e;
@@ -204,6 +254,84 @@
     margin-top: 25px;
 }
 
+form input
+{
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #ffffff;
+    font-size: 28px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top:30px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+.btn-property-send
+{
+
+    background-color: transparent;
+    margin-top: 20px;
+    height: 55px;
+    width: 220px;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 0;
+    border-width: 3px;
+    font-size: 28px;
+    text-align: center;
+    border-color: white;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+     background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+
+.img-flex-item
+{
+    flex:1;
+
+}
+
+
+.inline-img
+{
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
 
 @media only screen and (min-width:1000px )
 {
@@ -223,9 +351,20 @@
     }
 
 
+    .font-style-5
+    {
+        padding-left: 0px;
+    }
+
     .logo-width
     {
         width: 60px;
+    }
+
+    .width-fld
+    {
+        width:47%;
+        margin-right: 5px;
     }
 
     .btn-property-show

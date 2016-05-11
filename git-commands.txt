@@ -1,7 +1,5 @@
 git status 
-git add
-OR
-git rm
+git add OR git add -u OR git rm
 git commit -m "message"
 git push origin master
 
