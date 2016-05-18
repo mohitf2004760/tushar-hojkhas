@@ -13,7 +13,7 @@ $(document).ready(function() {
     var bg = jQuery("#bg1");
     jQuery(window).resize("resizeBackground");
     function resizeBackground() {
-        bg.height(jQuery(window).height()-60);
+        bg.height(jQuery(window).height() -60);
     }
     resizeBackground();
 
@@ -42,14 +42,11 @@ $(document).ready(function() {
 
 $("#right-menu-button-id").click(function(e) {
     e.stopPropagation();
-    $("#signup-popup").css({
-        top: $(this).offset().top + 20,
-        left: $(this).offset().left - 540
-    });
     $("#signup-popup").show();
     return false;
 });
 
+/*
 $("#signup-popup").hover(
     function() {
         $(this).data("hovered", true);
@@ -57,11 +54,16 @@ $("#signup-popup").hover(
         $(this).data("hovered", false);
     }
 );
+*/
 
-$("html").click(function(e) {
-    e.stopPropagation();
-    if ($("#signup-popup").data("hovered") == false) {
-        $("#signup-popup").hide();
-    }
+$("body").click(function(e) {
+    //e.stopPropagation();
+    //if ($("#signup-popup").data("hovered") == false) {
+    $("#signup-popup").hide();
+    //}
 });
+
+$("#signup-popup").click(function(e){
+    e.stopPropagation();
+    });
 });

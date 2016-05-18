@@ -137,8 +137,6 @@
     font-size: 30px;
     font-family: lato;
     font-weight: 700;
-    padding-left: 25px;
-    padding-top: 20px;
     color: white;
 }
 
@@ -172,7 +170,40 @@
     word-spacing: 1px;
     letter-spacing: 1px;
 
+}.font-style-10
+ {
+     font-size: 36px;
+     font-family: lato;
+     text-align: center;
+     word-spacing: 1px;
+     letter-spacing: 1px;
+    color: gray;
+
+ }
+
+.font-style-11 {
+    font-family: lato;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 0;
 }
+
+.font-style-12
+{
+    font-family: lato;
+    font-size: 25px;
+    font-weight: 400;
+    color: #222222;
+}
+
+.font-style-13
+{
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 300;
+    color: lightslategrey;
+}
+
 
 .center-text
 {
@@ -189,15 +220,17 @@
 {
     width: 95%;
 }
-.pad-top-1
-{
-     margin-top: 100px;
-}
 
-.pad-top-2
+
+.marg-top-2
 {
     margin-top: 30px;
 }
+.pad-top-1
+{
+    padding-top: 100px;
+}
+
 
 .pad-top-3
 {
@@ -216,6 +249,53 @@
 {
     margin-top: 100px;
 }
+
+.position-text1
+{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.position-text2
+{
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.position-text3
+{
+    border: none;
+    border-bottom: 3px solid #2cb99e;
+    position: absolute;
+    margin-left: 20px;
+    top:180px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+a.position-text3:hover
+{
+    text-decoration: none;
+    color: #222222;
+}
+
+.position-text4
+{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 65px;
+    bottom: 15px;
+
+}
+
+a.position-text4:hover
+{
+    text-decoration: none;
+    color: lightslategrey;
+}
+
+
 
 .pos-show
 {
@@ -242,6 +322,28 @@
     border: none;
 }
 
+
+.btn-property-accept:hover
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-accept:visited
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-accept:focus
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
 .btn-property-show
 {
     height: 55px;
@@ -266,22 +368,30 @@
 }
 
 
-.btn-property-accept:hover
+.btn-property-show:visited
 {
-    background-color:  #2cb99e;
-    color: white;
     text-decoration: none;
+    background-color: transparent;
+    color: white;
 }
+
+.btn-property-show:focus
+{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
 
 .colorback
 {
     background-color:  #2cb99e;
-    margin-top: 25px;
+
 }
 
 form input
 {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
@@ -310,6 +420,30 @@ form input
     text-align: center;
     border-color: white;
 }
+
+
+.btn-property-send:hover
+{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+.btn-property-send:visited
+{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-property-send:focus
+{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
 
 textarea:hover,
 input:hover,
@@ -353,7 +487,7 @@ button:hover
 {
     display: flex;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
 }
 
@@ -361,13 +495,68 @@ button:hover
 for pop up of menu button click
 */
 #signup-popup{
-    height: 598px;
-    width: 579px;
+    height: 300px;
+    width: 200px;
     display: none;
-    background: transparent url(http://i.stack.imgur.com/srdeI.png) no-repeat -5px -12px;
     position: absolute;
-    padding: 10px;
+    top: 0;
+    right: 0;
+    border-color: #2cb99e;
+    border-width: 3px;
+    border-style:groove;
+    background-color: white;
+    /*padding: 10px;*/
     /*border: 1px solid red;*/
+}
+
+.pos-popup
+{
+    position: absolute;
+    top: 10px;
+    left:50%;
+    margin-left: -47px ;
+}
+
+.btn-property-signup
+{
+    background: rgb(44 , 185 , 158 );
+    height: 40px;
+    width: 180px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    border-radius: 0;
+    border: none;
+}
+
+.btn-property-signup:hover
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-signup:visited
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-signup:focus
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.pos-btn-signup
+{
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: 120px;
 }
 
 /*For animation of down arrow */
@@ -408,34 +597,34 @@ for pop up of menu button click
         transform: translateY(0);
     }
     40% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
         -moz-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
+    60% {
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
 .arrow {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -70px;
     left: 50%;
     margin-left: -20px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url(images/Nav.png);
     background-size: contain;
 }
 
 .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    -moz-animation: bounce 4s infinite;
+    -webkit-animation: bounce 4s infinite;
+    animation: bounce 4s infinite;
 }
 
 .bx-viewport{
