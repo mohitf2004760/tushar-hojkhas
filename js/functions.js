@@ -3,27 +3,26 @@
  */
 
 $(document).ready(function() {
-    //var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-    //var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    //$("#heightdoc").height($(window).height());
-   // $("#heightdoc").width(window.screen.availWidth);
-
-    //for full size background of (window-url bar)
 
     var bg = jQuery("#bg1");
+    var bgsignup = jQuery("#bg2");
     jQuery(window).resize("resizeBackground");
     function resizeBackground() {
         bg.height(jQuery(window).height() -60);
     }
     resizeBackground();
 
-    //for auto moving background image
 
-    function beeRight() {
-        $("#b").animate({left: "+=50"}, 15000, "swing");
+    //for full size background of signup page(window - url bar)
+
+
+    jQuery(window).resize("resizeBackground");
+    function resizeBackground1() {
+        bgsignup.height(jQuery(window).height() );
     }
+    resizeBackground1();
 
-    beeRight();
+//slider for testimonial
 
     $('.bxslider').bxSlider({
         slideWidth:250,

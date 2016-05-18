@@ -204,6 +204,13 @@
     color: lightslategrey;
 }
 
+.font-style-14
+{
+    font-family: lato;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
 
 .center-text
 {
@@ -633,6 +640,91 @@ for pop up of menu button click
     border: none;
 }
 
+
+
+/*css for signup page*/
+
+.img-back2
+{
+    background: url(images/signup-back.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    position: relative;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    box-shadow: inset 0 0 0 1000px rgba(44 , 185 , 158 , .4);
+
+}
+
+.title-img
+{
+    position: absolute;
+    top:10%;
+    left:50%;
+    margin-left: -60px;
+}
+
+.text-pos-1
+{
+    position: absolute;
+    top:180px;
+    left:50%;
+    margin-left: -130px;
+}
+
+
+/*for dropdown*/
+
+.dropdown-step1
+{
+    width: 280px;
+    height: 80px;
+    font-size: 35px;
+    font-family: lato;
+    top: 240px;
+    left: 50%;
+    margin-left: -140px;
+    padding: 12px 20px;
+    border: 2px solid #000000;
+    border-radius: 9px;
+    position: absolute;
+    background-color: white;
+    text-decoration: none;
+    color: slategrey;
+}
+
+select:focus
+{
+    outline: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.caret-below
+{
+    overflow: hidden;
+    content: "&#9698;";
+}
+
+
+.process-img
+{
+    position: absolute;
+    bottom: 10%;
+    margin-left: -170px;
+    left: 50%;
+}
 
 @media only screen and (min-width:1000px )
 {
