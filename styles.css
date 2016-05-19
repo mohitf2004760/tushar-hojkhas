@@ -702,6 +702,13 @@ for pop up of menu button click
     left:47%;
 }
 
+.text-pos-3
+{
+    position: absolute;
+    top:125px;
+    left:47%;
+}
+
 /*for dropdown*/
 
 .dropdown-step1
@@ -779,10 +786,19 @@ select:focus
     left: 50%;
 }
 
-.pos-form-signin
+.pos-form-signup
 {
     position: absolute;
     top:140px;
+    left: 50%;
+    margin-left: -150px;
+    max-width: 300px;
+}
+
+.pos-form-signin
+{
+    position: absolute;
+    top:210px;
     left: 50%;
     margin-left: -150px;
     max-width: 300px;
