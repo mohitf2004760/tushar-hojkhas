@@ -104,7 +104,7 @@
 
 .font-style-3 {
     font-family: lato;
-    font-size: 33px;
+    font-size: 28px;
     font-weight: 500;
     padding-top: 0;
 }
@@ -206,9 +206,18 @@
 
 .font-style-14
 {
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 200;
+    color: white;
+}
+
+
+.font-style-15
+{
     font-family: lato;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 100;
     color: white;
 }
 
@@ -227,6 +236,7 @@
 {
     width: 95%;
 }
+
 
 
 .marg-top-2
@@ -308,8 +318,8 @@ a.position-text4:hover
 {
     position: absolute;
     left:50%;
-    margin-left: -160px ;
-    bottom: 20px;
+    margin-left: -130px ;
+    bottom: 10px;
 }
 .pad-left-1
 {
@@ -354,7 +364,7 @@ a.position-text4:hover
 .btn-property-show
 {
     height: 55px;
-    width: 320px;
+    width: 260px;
     color: white;
     text-decoration: none;
     margin: auto;
@@ -363,7 +373,6 @@ a.position-text4:hover
     border-width: 5px;
     background-color: transparent;
     margin-top: 150px;
-    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -671,6 +680,14 @@ for pop up of menu button click
     margin-left: -60px;
 }
 
+.title-img2
+{
+    position: absolute;
+    top:10%;
+    left:50%;
+    margin-left: -150px;
+}
+
 .text-pos-1
 {
     position: absolute;
@@ -678,7 +695,12 @@ for pop up of menu button click
     left:50%;
     margin-left: -130px;
 }
-
+.text-pos-2
+{
+    position: absolute;
+    top:90px;
+    left:47%;
+}
 
 /*for dropdown*/
 
@@ -756,6 +778,76 @@ select:focus
     margin-left: -170px;
     left: 50%;
 }
+
+.pos-form-signin
+{
+    position: absolute;
+    top:140px;
+    left: 50%;
+    margin-left: -150px;
+    max-width: 300px;
+}
+
+.width-fld2
+{
+    width: 300px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #2cb99e;
+    color: #ffffff;
+    font-size: 32px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top:20px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-weight:lighter;
+}
+
+.btn-property-register
+{
+    background: rgba(44 , 185 , 158 , .7);
+    height: 50px;
+    width: 230px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    border-radius: 0;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family:Lato;
+    font-weight: 100;
+
+}
+
+
+.btn-property-register:hover
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-register:visited
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-register:focus
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 
 @media only screen and (min-width:1000px )
 {
