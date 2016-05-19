@@ -684,14 +684,31 @@ for pop up of menu button click
 
 .dropdown-step1
 {
+    padding: 0 160px 0px 0 ;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+
+.pos-dropdown
+{
     width: 280px;
     height: 80px;
-    font-size: 35px;
+    font-size: 30px;
     font-family: lato;
     top: 240px;
     left: 50%;
     margin-left: -140px;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border: 2px solid #000000;
     border-radius: 9px;
     position: absolute;
@@ -700,16 +717,30 @@ for pop up of menu button click
     color: slategrey;
 }
 
+.select-wrapper {
+    background-color: #FFF;
+    display: inline-block;
+    position: relative;
+}
+.select-wrapper:after {
+    content: "◢";
+    font-family: 'lato';
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 5;
+}
+
+.rightji
+{
+    text-align: right;
+}
+
 select:focus
 {
     outline: none;
 }
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-}
+
 
 .caret-below
 {
