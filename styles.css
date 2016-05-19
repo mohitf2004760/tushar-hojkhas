@@ -713,8 +713,7 @@ for pop up of menu button click
 
 .dropdown-step1
 {
-    padding: 0 160px 0px 0 ;
-    overflow: hidden;
+    padding: 0px 180px 5px 10px ;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
@@ -728,16 +727,17 @@ for pop up of menu button click
 }
 
 
+
 .pos-dropdown
 {
     width: 280px;
     height: 80px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: lato;
     top: 240px;
     left: 50%;
     margin-left: -140px;
-    padding: 15px 20px;
+    padding: 14px 0 14px 0px;
     border: 2px solid #000000;
     border-radius: 9px;
     position: absolute;
@@ -753,16 +753,11 @@ for pop up of menu button click
 }
 .select-wrapper:after {
     content: "◢";
-    font-family: 'lato';
+    font-family: Lato;
     position: absolute;
-    top: 13px;
+    top: 0px;
     right: 10px;
     z-index: 5;
-}
-
-.rightji
-{
-    text-align: right;
 }
 
 select:focus
