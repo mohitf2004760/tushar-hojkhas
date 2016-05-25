@@ -1,0 +1,164 @@
+/* Stylesheet */
+
+
+
+img{
+	width:100%;
+}
+.topbar{
+	background-color: #2cb99e;
+	border-radius: 0px;
+}
+.topbar .left i,
+.topbar .right i{
+	font-size: 2em;
+	color: #fff;
+	padding: 11px;
+}
+.profile{
+	margin-top: 2%;
+        margin-bottom: 5%;
+}
+.profile img{
+	float: none;
+	max-width: 150px;
+    max-height: 150px;
+	border-radius: 250px;
+	padding: 0;
+}
+#name{
+	color: #333;
+	font-weight: bold;
+}
+.profile h4{
+	color: grey;
+	font-weight: 100;
+}
+.credit_display{
+	display: inline-block;
+}
+.credit_display h3{
+	float: left;	
+	margin-top: 0;
+}
+
+.link-color {
+	color: #2cb99e;
+
+}
+
+.link-color:hover
+{
+	text-decoration: none;
+	color: lightslategrey;
+}
+
+
+
+#credits{
+	padding-right: 5px;
+}
+.profile, .tabs, .followers{
+	padding: 0;
+	float: none;
+    display: inline-block;
+}
+.navbar-nav{
+	width: 100%;
+	margin: 0;
+}
+.navbar-nav p{
+	margin: 0;
+}
+.navbar-nav>li{
+	width: 33.333%;
+	float: left;
+}
+.down .navbar-nav .active a{
+	color: #2cb99e !important;
+	border-bottom: solid 5px #2cb99e;
+}
+.up{
+	border-top: solid 2px #e7e7e7;
+    border-bottom: solid 5px #ccc;
+	margin-bottom: 0px;
+}
+.up .navbar-nav>li {
+	border-right: solid 1px #e7e7e7;
+}
+.up .navbar-nav>li>a {
+	color: #ccc;
+}
+.down .navbar-nav>li>a {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+#about{
+	font-size: 24px;
+}
+#about, #activities{
+	padding: 10px 0;
+}
+.follow{
+	margin-bottom: 25px;
+}
+.followers img{
+	max-width: 250px;
+    max-height: 250px;
+    float: left;
+}
+.follower_details{
+	text-align: left;
+	margin-top: 3%;
+	float: left;
+}
+.verified{
+	padding: 0;
+}
+.follower_details h4{
+	color: #777;
+	float: left;
+	margin: 0;
+}
+.follower_details p{
+	clear: both;
+	color: #ccc;
+}
+.follower_details img{
+	float: left;
+	max-width: 15px;
+	margin-left: 5px;
+}
+.follow_btn{
+	color: #2cb99e;
+	background-color: #fff;
+	border-color: #2cb99e;
+	padding: 5px 25px;
+}
+@media (max-width: 400px){
+	h3{
+		font-size: 18px !important;
+	}
+	h4{
+		font-size: 15px !important;
+	}
+	a, p{
+		font-size: 12px !important;
+		margin-bottom: 0px;
+	}
+	.follower_details{
+		padding-left: 0;
+	}
+	#about{
+		font-size: 16px !important;
+	}
+	.navbar-nav>li>a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.follow_btn{
+		padding: 2px 12px;
+		font-size: 14px;
+	}
+}
