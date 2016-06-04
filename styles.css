@@ -1,3 +1,4 @@
+/* mattresses, gande kapde, bathroom, kitchen ka samaan, LED, clothes attache*/
 .page-width
 {
     max-width: 999px;
@@ -15,10 +16,14 @@
 }
 
 @keyframes animatedBackground {
-    from { background-position: 100% 0; }
+    from { background-position: 100% 0 }
     to { background-position: 0 0; }
 }
 
+.bg_wrapper
+{
+    overflow:hidden;
+}
 .img-back
 {
     background: url(images/back1-mod.png) no-repeat;
@@ -30,7 +35,63 @@
     height:100%;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
     position: relative;
-    animation: animatedBackground 25s linear;
+    transform:scale(1);
+    transition:all 10s ease-in 0s;
+}
+
+.img-back.zout {
+    transform:scale(1.2); /* <--- change the scale of zoom out as appropriate */
+}
+
+.img-back.anim{
+    animation: animatedBackground 20s linear 0s;
+}
+
+.pills{
+    position: relative;
+    overflow: hidden;
+    /*margin-bottom: -133px;*/
+}
+.pills ul {
+    list-style: none;
+    min-height: 330px;
+    margin-top: 50px;
+}
+.pills ul li.bar1{
+    position: absolute;
+    right: -340px;
+}
+.pills ul li.bar2{
+    position: absolute;
+    right: -304px;
+    top: 300px;
+}
+.pills ul li.bar3{
+    position: absolute;
+    margin-left: 0px;
+    top: 175px;
+    left: -340px;
+}
+.pills ul li span.icon {
+    float: left;
+    margin-top: -18px;
+}
+.pills ul li span img {
+    width: 70px;
+    height: auto;
+}
+.pills ul li span.text{
+    float: left;
+    padding-left: 15px;
+}
+.pills ul li span.text p{
+    font-size: 18px;
+    font-family: lato;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 
@@ -290,6 +351,23 @@
     cursor: pointer;
 }
 
+.position-text5
+{
+    position: absolute;
+    left:50%;
+    top:300px;
+    margin-left: -123px;
+}
+
+.position-text6
+{
+
+    position: absolute;
+    top:380px;
+    left:50%;
+    margin-left: -108px;
+}
+
 
 a.position-text3:hover
 {
@@ -337,6 +415,10 @@ a.position-text4:hover
     display: block;
     border-radius: 0;
     border: none;
+    position: absolute;
+    top:200px;
+    left:50%;
+    margin-left: -140px;
 }
 
 
@@ -364,7 +446,7 @@ a.position-text4:hover
 .btn-property-show
 {
     height: 55px;
-    width: 260px;
+    width: 280px;
     color: white;
     text-decoration: none;
     margin: auto;
@@ -575,60 +657,12 @@ for pop up of menu button click
     margin-top: 120px;
 }
 
-/*For animation of down arrow */
+/*For down arrow */
 
-@-moz-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -moz-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-@-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-    60% {
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-}
 
 .arrow {
     position: absolute;
-    bottom: -70px;
+    bottom:-70px;
     left: 50%;
     margin-left: -20px;
     width: 50px;
@@ -637,11 +671,7 @@ for pop up of menu button click
     background-size: contain;
 }
 
-.bounce {
-    -moz-animation: bounce 4s infinite;
-    -webkit-animation: bounce 4s infinite;
-    animation: bounce 4s infinite;
-}
+
 
 .bx-viewport{
     -webkit-box-shadow: none;
