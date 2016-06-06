@@ -63,13 +63,48 @@ $("#right-menu-button-id").click(function(e) {
 });
 
     var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(),
+        vw = $(document).width(), //max-width of page is 999px
+        ew = $('#bar1').width(),
+        tw = (vw / 2) - (ew / 2);
+    // Scene Handler
+    var scene1 = new ScrollMagic.Scene({
+        triggerElement: "#showbutton",
+        duration: 0,
+        triggerHook: 'onLeave',
+        offset: 520,
+        reverse: true
+    })
+        .setTween("#bar1", {
+            left: tw
+        })
+        .addTo(controller);
+
+
+    var controller = new ScrollMagic.Controller(),
+        vw = $(document).width(), //used max-width of 999px instead of
+        ew = $('#bar2').width(),
+        tw = (vw / 2) - (ew / 2);
+    // Scene Handler
+    var scene1 = new ScrollMagic.Scene({
+        triggerElement: "#showbutton",
+        duration: 0,
+        triggerHook: 'onLeave',
+        offset: 520,
+        reverse: true
+    })
+        .setTween("#bar2", {
+            left: tw
+        })
+        .addTo(controller);
+
+    var controller = new ScrollMagic.Controller(),
+        vw = $(document).width(), //max-width of page is 999px
         ew = $('#bar3').width(),
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
     var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#bg3",
-        duration: 220,
+        triggerElement: "#showbutton",
+        duration: 0,
         triggerHook: 'onLeave',
         offset: 520,
         reverse: true
@@ -79,46 +114,14 @@ $("#right-menu-button-id").click(function(e) {
         })
         .addTo(controller);
 
-    var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(),
-        ew = $('#bar1').width(),
-        tw = (vw / 2) - (ew / 2);
-    // Scene Handler
-    var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#bg3",
-        duration: 220,
-        triggerHook: 'onLeave',
-        offset: 520,
-        reverse: true
-    })
-        .setTween("#bar1", {
-            right: tw
-        })
-        .addTo(controller);
 
 
-    var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(),
-        ew = $('#bar2').width(),
-        tw = (vw / 2) - (ew / 2);
-    // Scene Handler
-    var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#bg3",
-        duration: 220,
-        triggerHook: 'onLeave',
-        offset: 580,
-        reverse: true
-    })
-        .setTween("#bar2", {
-            right: tw
-        })
-        .addTo(controller);
 
     //bar4
     var controller = new ScrollMagic.Controller();
     var scene1 = new ScrollMagic.Scene({
         triggerElement: "#bg3",
-        duration: 300,
+        duration: 100,
         triggerHook: 'onLeave',
         offset: 300,
         reverse: true

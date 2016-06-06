@@ -55,23 +55,27 @@
 .pills ul {
     list-style: none;
     min-height: 330px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .pills ul li.bar1{
     position: absolute;
     right: -340px;
 }
+
 .pills ul li.bar2{
     position: absolute;
-    right: -304px;
-    top: 300px;
+    margin-left: 15px;
+    top: 125px;
+    left: -360px;
 }
+
 .pills ul li.bar3{
     position: absolute;
-    margin-left: 0px;
-    top: 175px;
-    left: -340px;
+    right: -340px;
+    top: 200px;
+    /*padding-left: 100px;*/
 }
+
 .pills ul li span.icon {
     float: left;
     margin-top: -18px;

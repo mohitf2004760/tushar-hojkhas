@@ -9,7 +9,7 @@ $(function() {
             if (target.length)
             {
                 $('html,body').animate({
-                    scrollTop: target.offset().top - 80
+                    scrollTop: target.offset().top - 10
                 }, 2000);
                 //return false; /*commented this out to fix tabs' link consider to make this function a named one to solve any unexpected bug */
             }
