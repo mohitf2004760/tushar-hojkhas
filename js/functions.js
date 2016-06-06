@@ -62,37 +62,18 @@ $("#right-menu-button-id").click(function(e) {
     return false;
 });
 
+
     var controller = new ScrollMagic.Controller(),
         vw = $(document).width(), //max-width of page is 999px
         ew = $('#bar1').width(),
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
     var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#showbutton",
-        duration: 0,
-        triggerHook: 'onLeave',
-        offset: 520,
+        duration: 200,
+        offset: 200,
         reverse: true
     })
         .setTween("#bar1", {
-            left: tw
-        })
-        .addTo(controller);
-
-
-    var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(), //used max-width of 999px instead of
-        ew = $('#bar2').width(),
-        tw = (vw / 2) - (ew / 2);
-    // Scene Handler
-    var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#showbutton",
-        duration: 0,
-        triggerHook: 'onLeave',
-        offset: 520,
-        reverse: true
-    })
-        .setTween("#bar2", {
             left: tw
         })
         .addTo(controller);
@@ -103,10 +84,8 @@ $("#right-menu-button-id").click(function(e) {
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
     var scene1 = new ScrollMagic.Scene({
-        triggerElement: "#showbutton",
-        duration: 0,
-        triggerHook: 'onLeave',
-        offset: 520,
+        duration: 200,
+        offset: 200,
         reverse: true
     })
         .setTween("#bar3", {
@@ -114,6 +93,20 @@ $("#right-menu-button-id").click(function(e) {
         })
         .addTo(controller);
 
+    var controller = new ScrollMagic.Controller(),
+        vw = $(document).width(), //max-width of page is 999px
+        ew = $('#bar2').width(),
+        tw = (vw / 2) - (ew / 2);
+    // Scene Handler
+    var scene1 = new ScrollMagic.Scene({
+        duration: 200,
+        offset: 200,
+        reverse: true
+    })
+        .setTween("#bar2", {
+            left: tw
+        })
+        .addTo(controller);
 
 
 
@@ -132,26 +125,26 @@ $("#right-menu-button-id").click(function(e) {
         .addTo(controller);
 
     function callback1 (event) {
-        if(event.scrollDirection == "FORWARD")
+        if(event.scrollDirection == "FORWARD"){
             console.log("Top arrow event --backToTop fired! (" + event.type + ")");
             $("#bar4").attr("href", "#bg3");
-    }
-
-    function callback2 (event) {
-        if(event.scrollDirection == "REVERSE")
+        }
+        else if (event.scrollDirection == "REVERSE")
+        {
             console.log("Top arrow event --goDown fired! (" + event.type + ")");
             $("#bar4").attr("href", "#bar4");
+        }
     }
+
+
 // add listeners
     scene1.on("end", callback1);
-
-    scene1.on("start", callback2);
 
 //bar5
     var controller = new ScrollMagic.Controller();
     var scene1 = new ScrollMagic.Scene({
         triggerElement: "#pills",
-        duration: 350,
+        duration: 100,
         triggerHook: 'onLeave',
         offset: -50,
         reverse: true
@@ -163,21 +156,19 @@ $("#right-menu-button-id").click(function(e) {
         .addTo(controller);
 
 
-    function callback3 (event) {
-        if(event.scrollDirection == "FORWARD")
-        console.log("Bottom arrow event --backToTop fired! (" + event.type + ")");
-        $("#bar5").attr("href", "#bar4");
-    }
-
-    function callback4 (event) {
-        if(event.scrollDirection == "REVERSE")
-            console.log("Bottom arrow event --goDown fired! (" + event.type + ")");
+    function callback2 (event) {
+        if(event.scrollDirection == "FORWARD"){
+            console.log("Top arrow event --backToTop fired! (" + event.type + ")");
+            $("#bar5").attr("href", "#bar4");
+        }
+        else if (event.scrollDirection == "REVERSE")
+        {
+            console.log("Top arrow event --goDown fired! (" + event.type + ")");
             $("#bar5").attr("href", "#bar5");
+        }
     }
 // add listeners
-    scene1.on("end", callback3);
-
-    scene1.on("start", callback4);
+    scene1.on("end", callback2);
 
 
 $("body").click(function(e) {
