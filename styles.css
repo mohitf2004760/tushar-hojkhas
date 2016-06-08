@@ -123,6 +123,11 @@
 }
 
 
+.pos-rel-signup
+{
+    position: relative;
+
+}
 .pos-abs-left
 {
     position: absolute;

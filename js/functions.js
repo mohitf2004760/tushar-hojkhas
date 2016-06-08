@@ -174,11 +174,23 @@ $("#right-menu-button-id").click(function(e) {
 $("body").click(function(e) {
     //e.stopPropagation();
     //if ($("#signup-popup").data("hovered") == false) {
-    $("#signup-popup").hide();
+    //$("#signup-popup").hide();
+    $('#signup-popup').fadeOut(700);
+    $('#overlay').removeClass('blur-in');
+    $('#overlay').addClass('blur-out');
+    //e.stopPropagation();
     //}
 });
 
 $("#signup-popup").click(function(e){
     e.stopPropagation();
     });
+
+$('#right-menu-button-id').click(function(){
+    $('#signup-popup').fadeIn(500);
+    $('#overlay').removeClass('blur-out');
+    $('#overlay').addClass('blur-in');
+});
+
+
 });
