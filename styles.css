@@ -92,7 +92,7 @@
 }
 .pills ul li span.text p{
     font-size: 15px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     text-align: left;
     font-weight: 400;
     padding-left: 10px;
@@ -150,7 +150,7 @@
 {
 
     font-size: 20px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     word-spacing: 1px;
     letter-spacing: 1px;
     text-align: center;
@@ -162,7 +162,7 @@
 
 .font-style-2
 {
-    font-family:lato;
+    font-family:'Lato', sans-serif;
     font-size: 15px;
     word-spacing: 1px;
     letter-spacing: 1px;
@@ -174,7 +174,7 @@
 }
 
 .font-style-3 {
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     font-size: 28px;
     font-weight: 500;
     padding-top: 0;
@@ -183,7 +183,7 @@
 .font-style-4
 {
     font-size: 20px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     line-height: 30px;
     font-weight: lighter;
     text-align: center;
@@ -195,7 +195,7 @@
 .font-style-5
 {
     font-size: 20px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     text-align: left;
     font-weight: 400;
     padding-left: 10px;
@@ -205,7 +205,7 @@
 .font-style-6
 {
     font-size: 30px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: white;
 }
@@ -214,7 +214,7 @@
 .font-style-7
 {
     font-size: 16px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     text-align: left;
     padding-left: 25px;
     padding-right: 30px;
@@ -225,7 +225,7 @@
 .font-style-8
 {
     font-size: 23px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     word-spacing: 1px;
     letter-spacing: 1px;
@@ -235,7 +235,7 @@
 .font-style-9
 {
     font-size: 15px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     word-spacing: 1px;
     letter-spacing: 1px;
@@ -243,7 +243,7 @@
 }.font-style-10
  {
      font-size: 36px;
-     font-family: lato;
+     font-family: 'Lato', sans-serif;
      text-align: center;
      word-spacing: 1px;
      letter-spacing: 1px;
@@ -252,7 +252,7 @@
  }
 
 .font-style-11 {
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
     padding-top: 0;
@@ -260,16 +260,20 @@
 
 .font-style-12
 {
-    font-family: lato;
-    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
     word-spacing: 1px;
-    font-weight: 400;
-    color: #222222;
+    font-weight: 600;
+    color:  #2cb99e;
+}
+.font-style-12:hover
+{
+    color: #2cb99e;
 }
 
 .font-style-13
 {
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: lightslategrey;
@@ -277,7 +281,7 @@
 
 .font-style-14
 {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 33px;
     font-weight: lighter;
     color: #c8c8c8;
@@ -286,20 +290,26 @@
 
 .font-style-15
 {
-    font-family: lato;
-    font-size: 35px;
-    font-weight: 100;
-    color: #2cb99e;
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    color: black;
 }
 
 .font-style-16
 {
-    font-family: lato;
-    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 27px;
     font-weight: 100;
     color: white;
 }
 
+.font-style-17
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+
+    color: black;
+}
 .center-text
 {
     text-align: left;
@@ -361,11 +371,10 @@
 .position-text3
 {
     border: none;
-    border-bottom: 3px solid #2cb99e;
     position: absolute;
     left: 50%;
-    margin-left: -69px;
-    top:160px;
+    margin-left: -31px;
+    top:140px;
     position: absolute;
     cursor: pointer;
 }
@@ -520,7 +529,6 @@ form input
     letter-spacing: 1px;
     margin-top:30px;
     border-radius: 0px;
-    -webkit-appearance: none;
     background-color: transparent;
 }
 
@@ -614,7 +622,7 @@ button:hover
 for pop up of menu button click
 */
 #signup-popup{
-    height: 250px;
+    height: 200px;
     width: 170px;
     display: none;
     position: absolute;
@@ -732,30 +740,30 @@ for pop up of menu button click
 .title-img
 {
     position: absolute;
-    top:15%;
+    top:23%;
     left:50%;
-    margin-left: -60px;
+    margin-left: -40px;
 }
 
 .title-img2
 {
     position: absolute;
-    top:12%;
+    top:14%;
     left:50%;
-    margin-left: -150px;
+    margin-left: -140px;
 }
 
 .text-pos-1
 {
     position: absolute;
-    top:180px;
+    top:210px;
     left:50%;
-    margin-left: -130px;
+    margin-left: -100px;
 }
 .text-pos-2
 {
     position: absolute;
-    top:100px;
+    top:120px;
     left:50%;
     margin-left: -15px;
 }
@@ -766,12 +774,19 @@ for pop up of menu button click
     top:125px;
     left:47%;
 }
+.pos-text7
+{
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -122px;
+}
 
 /*for dropdown*/
 
 .dropdown-step1
 {
-    padding: 0px 170px 5px 10px ;
+    padding: 0px 120px 0px 10px ;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
@@ -788,14 +803,14 @@ for pop up of menu button click
 
 .pos-dropdown
 {
-    width: 280px;
-    height: 80px;
-    font-size: 35px;
-    font-family: lato;
-    top: 240px;
+    width: 230px;
+    height: 60px;
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    top: 260px;
     left: 50%;
-    margin-left: -140px;
-    padding: 14px 0 14px 0px;
+    margin-left: -113px;
+    padding: 3px 0 0px 0px;
     border: 2px solid #c8c8c8;
     border-radius: 9px;
     position: absolute;
@@ -811,11 +826,12 @@ for pop up of menu button click
 }
 .select-wrapper:after {
     content: "◢";
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     position: absolute;
     top: 0px;
     right: 10px;
     z-index: 5;
+
 }
 
 select:focus
@@ -834,8 +850,8 @@ select:focus
 .process-img
 {
     position: absolute;
-    bottom: 10%;
-    margin-left: -170px;
+    bottom: 8%;
+    margin-left: -145px;
     left: 50%;
 }
 
@@ -851,7 +867,7 @@ select:focus
 .pos-form-signin
 {
     position: absolute;
-    top:210px;
+    top:180px;
     left: 50%;
     margin-left: -150px;
     max-width: 300px;
@@ -864,33 +880,83 @@ select:focus
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #2cb99e;
-    color: #2cb99e;
-    font-size: 32px;
+    color: black;
+    font-size: 26px;
     word-spacing: 1px;
     letter-spacing: 1px;
     margin-top:20px;
     border-radius: 0px;
-    -webkit-appearance: none;
     background-color: transparent;
     font-weight:lighter;
+    font-family: 'Lato', sans-serif;
 }
-
 .width-fld2::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #2cb99e;
+    color:    black;
 }
 .width-fld2:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #2cb99e;
+    color:    black;
     opacity:  1;
 }
 .width-fld2::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #2cb99e;
+    color:    black;
     opacity:  1;
 }
 .width-fld2:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    #2cb99e;
+    color:    black;
 }
 
 
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    margin-left: -150px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #2cb99e;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "✓";
+    font-family: 'FontAwesome';
+    background: transparent;
+    color: black;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "✓";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+    outline:none /* focus style */
+}
 .btn-property-register
 {
     background: rgba(44 , 185 , 158 , .7);
@@ -904,7 +970,7 @@ select:focus
     border: none;
     font-size: 30px;
     margin-top: 17px;
-    font-family:Lato;
+    font-family:'Lato', sans-serif;
     font-weight: 100;
 
 }
@@ -925,6 +991,48 @@ select:focus
 }
 
 .btn-property-register:focus
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.btn-property-forgot
+{
+    background: red;
+    height: 50px;
+    width: 230px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    border-radius: 0;
+    border: none;
+    font-size: 28px;
+    margin-top: 17px;
+    font-family:'Lato', sans-serif;
+    font-weight: 100;
+
+}
+
+
+.btn-property-forgot:hover
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-forgot:visited
+{
+    background-color:  #2cb99e;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-property-forgot:focus
 {
     background-color:  #2cb99e;
     color: white;
