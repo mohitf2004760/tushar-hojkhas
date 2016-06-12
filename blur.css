@@ -1,15 +1,15 @@
 .blur-in {
-    -webkit-animation: blur 0.5s forwards;
-    -moz-animation: blur 0.5s forwards;
-    -o-animation: blur 0.5s forwards;
-    animation: blur 0.5s forwards;
+    -webkit-animation: blur 0s forwards;
+    -moz-animation: blur 0s forwards;
+    -o-animation: blur 0s forwards;
+    animation: blur 0s forwards;
 }
 
 .blur-out {
-    -webkit-animation: blur-out 0.5s forwards;
-    -moz-animation: blur-out 0.5s forwards;
-    -o-animation: blur-out 0.5s forwards;
-    animation: blur-out 0.5s forwards;
+    -webkit-animation: blur-out 0s forwards;
+    -moz-animation: blur-out 0s forwards;
+    -o-animation: blur-out 0s forwards;
+    animation: blur-out 0s forwards;
 }
 
 @-webkit-keyframes blur {

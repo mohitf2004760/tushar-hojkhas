@@ -58,7 +58,11 @@ $(document).ready(function() {
 
 $("#right-menu-button-id").click(function(e) {
     e.stopPropagation();
-    $("#signup-popup").show();
+    $('#signup-popup').fadeIn(500);
+    $('#overlay').removeClass('blur-out');
+    $('#overlay').addClass('blur-in');
+    $("body").css("overflow","hidden");
+    //$("#signup-popup").show();
     return false;
 });
 
@@ -175,7 +179,8 @@ $("body").click(function(e) {
     //e.stopPropagation();
     //if ($("#signup-popup").data("hovered") == false) {
     //$("#signup-popup").hide();
-    $('#signup-popup').fadeOut(700);
+    $("body").css("overflow","auto");
+    $('#signup-popup').fadeOut(100);
     $('#overlay').removeClass('blur-in');
     $('#overlay').addClass('blur-out');
     //e.stopPropagation();
@@ -185,12 +190,6 @@ $("body").click(function(e) {
 $("#signup-popup").click(function(e){
     e.stopPropagation();
     });
-
-$('#right-menu-button-id').click(function(){
-    $('#signup-popup').fadeIn(500);
-    $('#overlay').removeClass('blur-out');
-    $('#overlay').addClass('blur-in');
-});
 
 
 });

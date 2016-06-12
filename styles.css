@@ -791,7 +791,7 @@ for pop up of menu button click
 
 .dropdown-step1
 {
-    padding: 0px 120px 0px 10px ;
+    padding: 0px 35px 0px 10px ;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
@@ -802,6 +802,7 @@ for pop up of menu button click
     outline: none;
     text-decoration: none;
     border: none;
+    width:225px;
 }
 
 
@@ -829,6 +830,7 @@ for pop up of menu button click
     display: inline-block;
     position: relative;
 }
+
 .select-wrapper:after {
     content: "◢";
     font-family: 'Lato', sans-serif;
