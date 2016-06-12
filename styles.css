@@ -180,7 +180,7 @@
 
 .font-style-3 {
     font-family: 'Lato', sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     padding-top: 0;
 }
@@ -218,7 +218,7 @@
 
 .font-style-7
 {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lato', sans-serif;
     text-align: left;
     padding-left: 25px;
@@ -745,7 +745,7 @@ for pop up of menu button click
 .title-img
 {
     position: absolute;
-    top:23%;
+    top:100px;
     left:50%;
     margin-left: -40px;
 }
@@ -753,7 +753,7 @@ for pop up of menu button click
 .title-img2
 {
     position: absolute;
-    top:14%;
+    top:80px;
     left:50%;
     margin-left: -140px;
 }
@@ -855,7 +855,7 @@ select:focus
 .process-img
 {
     position: absolute;
-    bottom: 8%;
+    top: 480px;
     margin-left: -145px;
     left: 50%;
 }
