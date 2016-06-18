@@ -895,3 +895,11 @@ p .bottom1 {padding: 0px 32px;
 }
 
 
+/*no nav bar animation on safari */
+.no-transition {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}

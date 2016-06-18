@@ -11,12 +11,10 @@
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css"/>
     <script src="js/functionsform.js" type="text/javascript"></script>
-    <script src="js/functions.js" type="text/javascript"></script>
-
+    <script src="js/showpassword.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
 </head>
 <body class="page-width" style="font-family: 'Lato', sans-serif">
@@ -49,7 +47,8 @@
                         <form id="formsignin" class="form-inline" role="form" method="post" action="#" style="text-align: center">
                             <input name="usr-email" id="email" class="width-fld2" placeholder="Email"/>
                             <h2 id='result' style="font-size: 13px; float: left"></h2>
-                            <input type="password" name="usr-pswd" id="usr-pswd" class="width-fld2" placeholder="Password" />
+                            <input type="password" name="usr-pswd" id="usr-password" class="width-fld2" placeholder="Password"/>
+                            <br/>
                             <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" >
                             <label for="checkbox-1" class="checkbox-custom-label">Show Password</label>
                             <button id="validate" name="loginbtn" type="submit" class="btn btn-default btn-property-register ">Login</button>

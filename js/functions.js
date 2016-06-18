@@ -57,13 +57,13 @@ $(document).ready(function() {
 
 
 $("#right-menu-button-id").click(function(e) {
-    e.stopPropagation();
-    $('#signup-popup').fadeIn(500);
-    $('#overlay').removeClass('blur-out');
-    $('#overlay').addClass('blur-in');
-    $("body").css("overflow","hidden");
+   // e.stopPropagation();
+   // $('#signup-popup').fadeIn(500);
+    //$('#overlay').removeClass('blur-out');
+    //$('#overlay').addClass('blur-in');
+    //$("body").css("overflow","hidden");
     //$("#signup-popup").show();
-    return false;
+    //return false;
 });
 
 
@@ -174,24 +174,13 @@ $("#right-menu-button-id").click(function(e) {
 // add listeners
     scene1.on("end", callback2);
 
+    //for feedback and contact us form right-padding scrollbar error
 
-$("body").click(function(e) {
-    //e.stopPropagation();
-    //if ($("#signup-popup").data("hovered") == false) {
-    //$("#signup-popup").hide();
-    $("body").css("overflow","auto");
-    $('#signup-popup').fadeOut(100);
-    $('#overlay').removeClass('blur-in');
-    $('#overlay').addClass('blur-out');
-    //e.stopPropagation();
-    //}
-});
+    $('#signup-popup-new').on('show.bs.modal', function (e) {
 
-$("#signup-popup").click(function(e){
-    e.stopPropagation();
-    });
-
-
+        $('body').addClass('test');
+        $('body').css('overflow-y','hidden');  // for no scrolling
+    })
 
 });
 

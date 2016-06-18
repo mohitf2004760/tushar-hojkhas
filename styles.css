@@ -256,7 +256,9 @@
 
  }
 
-.font-style-11 {
+.font-style-11
+
+{
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
@@ -268,10 +270,10 @@
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     word-spacing: 1px;
-    font-weight: 600;
+    font-weight: 400;
     color:  #2cb99e;
 }
-.font-style-12:hover
+a.font-style-12:hover
 {
     color: #2cb99e;
 }
@@ -374,13 +376,7 @@
 
 .position-text3
 {
-    border: none;
-    position: absolute;
-    left: 50%;
-    margin-left: -31px;
-    top:140px;
-    position: absolute;
-    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .position-text5
@@ -389,7 +385,6 @@
     left:50%;
     margin-left: -95px;
     top:120px;
-
 }
 
 .position-text6
@@ -641,12 +636,34 @@ for pop up of menu button click
     /*border: 1px solid red;*/
 }
 
-.pos-popup
+.modal{
+    max-width: 999px;
+    margin: auto;
+
+}
+
+.modal-dialog
 {
     position: absolute;
-    top: 10px;
-    left:50%;
-    margin-left: -35px ;
+    margin: auto;
+    width: 170px;
+    right:0;
+}
+
+.modal-content
+{
+    border: 3px solid #2cb99e;
+    border-radius: 0;
+
+}
+
+.test[style] {
+    padding-right:0 !important;
+}
+
+.pos-popup
+{
+    padding-top: 20px;
 }
 
 .btn-property-signup
@@ -660,6 +677,8 @@ for pop up of menu button click
     display: block;
     border-radius: 0;
     border: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .btn-property-signup:hover
@@ -683,13 +702,6 @@ for pop up of menu button click
     text-decoration: none;
 }
 
-.pos-btn-signup
-{
-    position: absolute;
-    left: 50%;
-    margin-left: -75px;
-    margin-top: 100px;
-}
 
 /*For down arrow */
 

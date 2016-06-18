@@ -17,8 +17,8 @@ $(document).ready(function() {
         var email = $("#email").val();
         console.log(email);
         if (validateEmail(email)) {
-            $("#result").text(email + " is valid.");
-            $("#result").css("color", "green");
+            //$("#result").text(email + " is valid.");
+            //$("#result").css("color", "green");
         } else {
             $("#result").text(email + " is not valid.");
             $("#result").css("color", "red");
@@ -27,4 +27,14 @@ $(document).ready(function() {
     }
 
     $("form").bind("submit", validate);
+
+
+
+//for showing password on clicking show password checkbox
+    $.toggleShowPassword({
+        field: '#usr-password',
+        control: '#checkbox-1'
+    });
+
+
 });
