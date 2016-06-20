@@ -182,6 +182,13 @@ $("#right-menu-button-id").click(function(e) {
         $('body').css('overflow-y','hidden');  // for no scrolling
     })
 
+    $('#signup-popup-new').on('hide.bs.modal', function (e) {
+
+        $('body').css('overflow-y','auto');  // for scrolling
+    })
+
+
+
 });
 
 
