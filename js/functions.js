@@ -68,7 +68,7 @@ $("#right-menu-button-id").click(function(e) {
 
 
     var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(), //max-width of page is 999px
+        vw = ($(document).width()>999) ? 999:$(document).width(), //$(document).width(), //max-width of page is 999px
         ew = $('#bar1').width(),
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
@@ -83,7 +83,7 @@ $("#right-menu-button-id").click(function(e) {
         .addTo(controller);
 
     var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(), //max-width of page is 999px
+        vw = ($(document).width()>999) ? 999:$(document).width(), //max-width of page is 999px
         ew = $('#bar3').width(),
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
@@ -98,7 +98,7 @@ $("#right-menu-button-id").click(function(e) {
         .addTo(controller);
 
     var controller = new ScrollMagic.Controller(),
-        vw = $(document).width(), //max-width of page is 999px
+        vw = ($(document).width()>999) ? 999:$(document).width(), //max-width of page is 999px
         ew = $('#bar2').width(),
         tw = (vw / 2) - (ew / 2);
     // Scene Handler
